@@ -1,6 +1,6 @@
 # Spring-Boot-WebSocket
 <h1>Building a chat room application using Spring Boot, Websockets and Stomp Protocol</h1>
-<img src="chat.png">
+
 <h3>To run the app go to : //localhost:8080</h3>
 
 Dependencies:
