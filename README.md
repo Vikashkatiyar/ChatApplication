@@ -12,4 +12,11 @@ Dependencies:
 	<li>sockjs-client 1.0.2</li>
 	<li>stomp-websocket 2.3.3</li>
 	<li>spring-boot-starter-reactor-netty</li>
-</ul>	
+</ul>
+
+# Before Entering the chat
+![image](https://github.com/Vikashkatiyar/ChatApplication/assets/89769715/1cd4eafa-fc77-40cf-9e21-2e20688cdb86)
+
+# After starting the chat
+![image](https://github.com/Vikashkatiyar/ChatApplication/assets/89769715/b77ff79d-113f-4896-8c2e-50963262c41c)
+
