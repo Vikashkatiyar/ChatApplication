@@ -1,0 +1,5 @@
+mainPackage\model\ChatMessage.class
+mainPackage\model\ChatMessage$MessageType.class
+mainPackage\config\WebsocketsConfig.class
+mainPackage\SpringBootWebsocketApplication.class
+mainPackage\controller\ChatController.class

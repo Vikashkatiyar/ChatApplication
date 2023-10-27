@@ -13,11 +13,15 @@ public class WebsocketsConfig implements WebSocketMessageBrokerConfigurer{
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/chatRoomForAll").withSockJS();
+		//addEndPoints("/ws")-> web socket
+		//addEndPoints("/wss")-> secure web socket(http,https)
 	}
 	
+	
+	//configureMessageBroker-> enable to massage broker
 	@Override
 	public void configureMessageBroker(MessageBrokerRegistry registry) {
-		registry.enableSimpleBroker("/chat");
+		registry.enableSimpleBroker("/chat"); //destination prefixes
 		registry.setApplicationDestinationPrefixes("/app");
 	}
 }

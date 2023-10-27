@@ -15,12 +15,13 @@ public class ChatController {
 	@MessageMapping("/chatRoom.register")
 	@SendTo("/chat/public")
 	public ChatMessage register(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
+		//add username in web socket session
 		headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
 		return chatMessage;
 	}
 
-	@MessageMapping("/chatRoom.send")
-	@SendTo("/chat/public")
+	@MessageMapping("/chatRoom.send")    //url to invoke sendMessage
+	@SendTo("/chat/public")     //where you want to send
 	public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
 		return chatMessage;
 	}
